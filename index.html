@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="scheduler-svgrepo-com.svg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/af96f23c39.js" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+    <title>ToDo Advanced</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h2>ToDo Advanced</h2>
+        </header>
+        <form id="todo-form">
+            <h3>Add task</h3>
+            <div class="field">
+                <input type="text" name="input-task" id="todo-input" placeholder="What we have for today?">
+                <button id='create-task'><i class="fa-solid fa-plus"></i></button>
+            </div>
+        </form>
+
+        <form id="edit-form" class="hide">
+            <h3>Edit task</h3>
+            <div class="field">
+                <input type="text" name="edit" id="edit-input" placeholder="Edit what to do...">
+                <button id="confirm-edit"><i class="fa-solid fa-paper-plane"></i></button>
+                <button id="cancel-edit"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+        </form>
+
+        <div class="search-task">
+            <h3>Search</h3>
+            <form class="search-form">
+                <div class="search-bar">
+                    <div class="field">
+                        <input type="text" name="search" id="search-input" placeholder="Search...">
+                        <button id="clear-search-btn"><i class="fa-solid fa-delete-left"></i></button>
+                    </div>
+                </div>
+                <select id="filter-select">
+                    <option value="all">All</option>
+                    <option value="done">Completed</option>
+                    <option value="todo">To do</option>
+                </select>
+            </form>
+        </div>
+        <div id="todo-container">
+            <!--  -->
+        </div>
+    </div>
+</body>
+
+</html>
